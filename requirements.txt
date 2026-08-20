@@ -1,0 +1,17 @@
+# TensorFlow -- provides the deep learning runtime.
+# Since TF 2.16+, Keras 3 ships as a separate standalone package that
+# TensorFlow depends on internally (roles reversed from the Keras 2 era,
+# when Keras lived inside TensorFlow as tf.keras).
+tensorflow>=2.21.0
+
+# Keras 3 -- imported directly as 'keras' throughout this project
+# (Sequential, layers, callbacks, load_model, pad_sequences, etc.).
+# Declared explicitly and separately from tensorflow because we now
+# import from the top-level 'keras' namespace, not tensorflow.keras.
+keras>=3.15.0
+
+# For building and running the web app
+streamlit>=1.32.0
+
+# For numerical operations (arrays, padding sequences, etc.)
+numpy>=1.26.0
